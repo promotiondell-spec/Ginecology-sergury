@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Интимная контурная пластика в СПб — Дом антивозрастной медицины</title>
+<meta name="description" content="Интимная контурная пластика гиалуроновой кислотой в Санкт-Петербурге. Клиника «Дом антивозрастной медицины», м. Чернышевская и м. Беговая. От 22 500 ₽, всё включено.">
+<meta name="theme-color" content="#FAF9F3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ══════ MOBILE FIRST ══════ */
+:root{
+  /* ═══ ЦВЕТА БРЕНДА — меняются только здесь ═══ */
+  --brand:#4A5942;      /* зелёный с логотипа: тёмные экраны */
+  --ink:#2F3A29;        /* текст и кнопки */
+  --accent:#63764C;     /* акцент */
+  --accent-soft:#B3C29B;
+  --bg:#FAF9F3;
+  --bg2:#EDEDE2;
+  --soft:#6B7062;
+  --line:rgba(47,58,41,.17);
+  --f:'Montserrat',-apple-system,Segoe UI,sans-serif;
+  --pad:22px;--head:56px;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f);font-weight:400;
+  font-size:16px;line-height:1.6;letter-spacing:-.005em;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+h1,h2{font-weight:300;line-height:1.14;letter-spacing:-.03em;margin:0}
+h3{margin:0}
+p{margin:0}
+a{color:inherit}
+.wrap{padding-left:var(--pad);padding-right:var(--pad);width:100%}
+.eyebrow{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--soft);font-weight:600}
+.progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--accent);z-index:99;transition:width .1s linear}
+
+.top{position:fixed;top:0;left:0;right:0;z-index:70;height:var(--head);
+  background:rgba(250,249,243,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);
+  transition:transform .35s ease}
+.top--hidden{transform:translateY(-100%)}
+.top__in{display:flex;align-items:center;justify-content:space-between;height:var(--head)}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{width:34px;height:34px;border-radius:50%;flex:none;display:block}
+.brand__t{font-size:11.5px;font-weight:600;line-height:1.25}
+.brand__t i{display:block;font-style:normal;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--soft);font-weight:400;margin-top:3px}
+.top__tel{display:none;font-size:14px;text-decoration:none;font-weight:600}
+
+.mobar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:flex;gap:8px;
+  padding:9px 14px calc(9px + env(safe-area-inset-bottom));
+  background:rgba(250,249,243,.96);backdrop-filter:blur(16px);border-top:1px solid var(--line)}
+.mobar a{flex:1}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:14px 24px;
+  border:1px solid var(--ink);background:var(--ink);color:var(--bg);border-radius:2px;
+  font-family:var(--f);font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  text-decoration:none;cursor:pointer;width:100%;transition:opacity .2s,transform .2s}
+.btn:active{transform:scale(.99)}
+.btn--ghost{background:transparent;color:var(--ink)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+.screen{min-height:100svh;display:flex;flex-direction:column;justify-content:center;
+  padding:calc(var(--head) + 38px) 0 54px;position:relative}
+.screen--alt{background:var(--bg2)}
+.screen--dark{background:var(--brand);color:var(--bg)}
+.screen--dark .eyebrow,.screen--dark .lead{color:rgba(250,249,243,.65)}
+.num-tag{position:absolute;top:calc(var(--head) + 14px);right:var(--pad);font-size:10.5px;
+  letter-spacing:.16em;color:var(--soft);font-weight:600}
+.screen--dark .num-tag{color:rgba(250,249,243,.45)}
+.head h2{font-size:clamp(27px,7.2vw,34px);margin:12px 0 0}
+.head .lead{margin-top:13px;color:var(--soft);font-size:15.5px;max-width:46ch}
+.block{margin-top:28px}
+.note{margin-top:18px;font-size:13px;color:var(--soft)}
+.sub{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--soft);font-weight:600;margin-bottom:14px}
+.screen--dark .sub{color:rgba(250,249,243,.55)}
+
+/* ── ГЕРОЙ ── */
+.hero h1{font-size:clamp(30px,8.4vw,40px);margin-top:14px}
+.hero h1 b{font-weight:600}
+.hero__lead{margin-top:16px;font-size:16px;color:var(--soft)}
+.hero__cta{display:grid;gap:10px;margin-top:24px}
+.hero__from{margin-top:16px;font-size:13.5px;color:var(--soft)}
+.hero__from b{font-weight:700;color:var(--ink);font-size:19px;letter-spacing:-.02em}
+
+/* УТП */
+.usp{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:24px}
+.usp div{background:var(--bg);padding:15px 16px}
+.usp b{display:block;font-size:13.5px;font-weight:600;margin-bottom:3px}
+.usp span{font-size:12.5px;color:var(--soft);line-height:1.4;display:block}
+
+/* ЦИФРЫ — крупно и жирно */
+.stats{display:grid;grid-template-columns:1fr 1fr;margin-top:26px;border-top:1px solid var(--line)}
+.stat{padding:18px 12px 18px 0;border-bottom:1px solid var(--line)}
+.stat:nth-child(even){padding-left:16px;border-left:1px solid var(--line)}
+.stat__v{display:block;font-size:clamp(40px,11.5vw,52px);font-weight:700;line-height:1;
+  letter-spacing:-.045em;margin-bottom:8px;color:var(--ink);white-space:nowrap}
+.stat__v .n{display:inline;font-size:inherit;font-weight:inherit;color:inherit;letter-spacing:inherit}
+.stat__v i{display:inline;font-style:normal;font-size:.32em;font-weight:500;color:var(--soft);
+  margin-left:6px;letter-spacing:0;vertical-align:baseline}
+.stat__c{display:block;font-size:13px;font-weight:400;color:var(--soft);line-height:1.35;letter-spacing:0}
+
+/* ── ДВЕ КОЛОНКИ ── */
+.two{display:grid;gap:32px}
+.list{border-top:1px solid var(--line)}
+.li{display:flex;gap:13px;padding:14px 0;border-bottom:1px solid var(--line)}
+.li__n{font-size:11px;color:var(--accent);padding-top:3px;flex:none;font-weight:600;letter-spacing:.08em}
+.li h3{font-size:15.5px;font-weight:600;letter-spacing:-.01em;margin-bottom:3px}
+.li p{font-size:14px;color:var(--soft)}
+.out{display:flex;gap:13px;padding:14px 0;border-bottom:1px solid var(--line)}
+.out__m{width:19px;height:19px;border-radius:50%;background:var(--accent);flex:none;margin-top:3px;position:relative}
+.out__m::after{content:"";position:absolute;left:6px;top:5px;width:4px;height:8px;
+  border-right:1.5px solid #fff;border-bottom:1.5px solid #fff;transform:rotate(42deg)}
+.out h3{font-size:15.5px;font-weight:600;letter-spacing:-.01em;margin-bottom:3px}
+.out p{font-size:14px;color:var(--soft)}
+
+/* ── ФАКТЫ (тёмный) ── */
+.facts{list-style:none;padding:0;margin:0;border-top:1px solid rgba(250,249,243,.2)}
+.facts li{padding:15px 0;border-bottom:1px solid rgba(250,249,243,.2);font-size:15px;
+  color:rgba(250,249,243,.86);display:flex;gap:13px}
+.facts li b{font-weight:600;color:var(--accent-soft);flex:none;font-size:11.5px;letter-spacing:.14em;padding-top:4px}
+
+/* ── ЭТАПЫ ── */
+.steps{position:relative;padding-left:24px}
+.steps::before{content:"";position:absolute;left:4px;top:6px;bottom:8px;width:1px;background:rgba(250,249,243,.25)}
+.steps__fill{position:absolute;left:4px;top:6px;width:1px;background:var(--accent-soft);height:0;transition:height 1.6s ease .2s}
+.steps.in .steps__fill{height:calc(100% - 14px)}
+.stp{position:relative;padding-bottom:20px}
+.stp:last-child{padding-bottom:0}
+.stp::before{content:"";position:absolute;left:-24px;top:5px;width:9px;height:9px;border-radius:50%;
+  background:var(--brand);border:1px solid var(--accent-soft)}
+.stp em{font-style:normal;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(250,249,243,.55);font-weight:600}
+.stp h3{font-size:16px;font-weight:600;letter-spacing:-.01em;margin:6px 0 5px;color:var(--bg)}
+.stp p{font-size:14px;color:rgba(250,249,243,.72)}
+
+/* ── ВОССТАНОВЛЕНИЕ ── */
+.rows{border-top:1px solid rgba(250,249,243,.2)}
+.rrow{padding:13px 0;border-bottom:1px solid rgba(250,249,243,.2)}
+.rrow__t{display:flex;justify-content:space-between;gap:12px;font-size:14px;margin-bottom:8px;color:rgba(250,249,243,.9)}
+.rrow__t i{font-style:normal;color:rgba(250,249,243,.55);font-size:12.5px;white-space:nowrap}
+.rtrack{height:5px;background:rgba(250,249,243,.18);border-radius:100px;position:relative;overflow:hidden}
+.rfill{position:absolute;top:0;bottom:0;border-radius:100px;width:0;background:var(--accent-soft);
+  transition:width 1s cubic-bezier(.4,0,.2,1)}
+.rows.in .rfill{width:var(--w)}
+
+/* ── ВРАЧ ── */
+.doc{display:grid;gap:20px}
+.doc__ph{position:relative;border-radius:2px;overflow:hidden;background:var(--bg2);
+  aspect-ratio:4/5;max-width:300px;border:1px dashed var(--line)}
+.doc__ph img{position:absolute;inset:0;z-index:1;width:100%;height:100%;
+  object-fit:cover;object-position:center top;display:block}
+.doc__ph .slot{position:absolute;inset:0;z-index:0;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:8px;text-align:center;padding:20px}
+.doc__ph .slot svg{width:34px;height:34px;stroke:var(--soft);opacity:.5;fill:none;stroke-width:1.2}
+.doc__ph .slot b{font-size:12px;font-weight:600;color:var(--soft);letter-spacing:.06em}
+.doc__ph .slot span{font-size:11.5px;color:var(--soft);opacity:.75;line-height:1.4}
+.doc__n{font-size:20px;font-weight:600;letter-spacing:-.02em}
+.doc__r{font-size:13.5px;color:var(--soft);margin-top:5px}
+.doc__st{display:flex;gap:28px;margin:16px 0;padding:14px 0;border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);font-size:12px;color:var(--soft)}
+.doc__st b{font-size:30px;font-weight:700;color:var(--ink);display:block;letter-spacing:-.04em;margin-bottom:2px}
+.doc__q{margin:0;padding-left:15px;border-left:2px solid var(--accent);font-size:14.5px;color:var(--soft)}
+.doc__e{margin-top:16px;font-size:13px;color:var(--soft);line-height:1.55}
+
+/* ── ВОЗРАЖЕНИЯ ── */
+.obj{display:grid;gap:10px}
+.objc{border:1px solid var(--line);border-radius:2px;padding:18px 18px 20px;background:var(--bg)}
+.screen--alt .objc{background:var(--bg)}
+.objc h3{font-size:15px;font-weight:600;margin-bottom:7px;letter-spacing:-.01em}
+.objc h3 span{color:var(--accent);margin-right:6px}
+.objc p{font-size:14px;color:var(--soft)}
+
+/* ── FAQ ── */
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:15px 34px 15px 0;position:relative;font-size:15px;font-weight:600}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:4px;top:23px;width:9px;height:1px;background:var(--ink)}
+.faq summary::before{content:"";position:absolute;right:8px;top:19px;width:1px;height:9px;background:var(--ink);transition:transform .3s,opacity .3s}
+.faq details[open] summary::before{transform:scaleY(0);opacity:0}
+.faq p{padding:0 0 17px;color:var(--soft);font-size:14px}
+
+/* ── ЦЕНЫ ── */
+.cards{display:grid;gap:10px}
+.card{border:1px solid var(--line);border-radius:2px;padding:22px 20px;display:flex;flex-direction:column;background:var(--bg)}
+.card--on{background:var(--ink);color:var(--bg);border-color:var(--ink);position:relative}
+.card__tag{position:absolute;top:-1px;right:-1px;background:var(--accent);color:#fff;font-size:9.5px;
+  letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:6px 12px}
+.card__ml{font-size:40px;font-weight:700;letter-spacing:-.05em;line-height:1}
+.card__ml i{font-style:normal;font-size:13px;font-weight:400;color:var(--soft);margin-left:5px;letter-spacing:0}
+.card--on .card__ml i{color:rgba(250,249,243,.55)}
+.card h3{font-size:15px;font-weight:600;letter-spacing:-.01em;margin:12px 0 7px}
+.card p{font-size:13.5px;color:var(--soft);flex:1}
+.card--on p{color:rgba(250,249,243,.7)}
+.card__p{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:27px;font-weight:700;letter-spacing:-.035em}
+.card--on .card__p{border-color:rgba(250,249,243,.2)}
+.card__p small{display:block;font-size:11px;font-weight:400;color:var(--soft);margin-top:5px;letter-spacing:0}
+.card--on .card__p small{color:rgba(250,249,243,.5)}
+.card .btn{margin-top:14px;min-height:46px}
+.card--on .btn{background:var(--bg);color:var(--ink);border-color:var(--bg)}
+.incl{margin-top:16px;border:1px solid var(--line);border-radius:2px;padding:18px 20px;background:var(--bg)}
+.incl b{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);font-weight:600;margin-bottom:12px}
+.incl ul{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+.incl li{font-size:14px;padding-left:22px;position:relative;color:var(--soft)}
+.incl li::before{content:"";position:absolute;left:0;top:7px;width:9px;height:5px;
+  border-left:1.5px solid var(--accent);border-bottom:1.5px solid var(--accent);transform:rotate(-45deg)}
+
+/* ── ФОРМА ── */
+.form{margin-top:26px;border:1px solid var(--line);border-radius:2px;padding:22px 20px;background:var(--bg)}
+.form h3{font-size:19px;font-weight:600;letter-spacing:-.02em;margin-bottom:8px}
+.form>p{font-size:14px;color:var(--soft);margin-bottom:18px}
+.field{margin-bottom:10px}
+.field input{width:100%;min-height:50px;padding:13px 14px;background:transparent;color:var(--ink);
+  border:1px solid var(--line);border-radius:2px;font-family:var(--f);font-size:16px}
+.field input::placeholder{color:var(--soft);opacity:.65}
+.consent{display:flex;gap:11px;align-items:flex-start;font-size:12px;color:var(--soft);margin:14px 0}
+.consent input{margin-top:2px;accent-color:var(--accent);width:18px;height:18px;flex:none}
+.fnote{margin-top:11px;font-size:13px;color:var(--accent);min-height:20px;font-weight:500}
+
+/* ── КОНТАКТЫ ── */
+.cont{margin-top:26px;border-top:1px solid var(--line)}
+.cont__row{padding:15px 0;border-bottom:1px solid var(--line)}
+.cont__row b{display:block;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);font-weight:600;margin-bottom:5px}
+.cont__row p,.cont__row a{font-size:15px;text-decoration:none}
+.tel-big{font-size:28px;font-weight:700;letter-spacing:-.035em;text-decoration:none;display:inline-block}
+.msgs{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.msgs a{padding:10px 16px;border:1px solid var(--line);border-radius:100px;font-size:12.5px;
+  text-decoration:none;letter-spacing:.03em;font-weight:500}
+
+.disclaimer{background:var(--bg2);padding:16px var(--pad);font-size:11.5px;color:var(--soft);text-align:center}
+.foot{padding:24px 0;font-size:11.5px;color:var(--soft);border-top:1px solid var(--line);display:grid;gap:6px}
+.foot a{color:var(--soft)}
+
+/* конверсионная полоса */
+.cta{margin-top:30px;padding-top:24px;border-top:1px solid var(--line);display:grid;gap:14px}
+.cta p{font-size:14px;color:var(--soft);line-height:1.5}
+.cta p b{font-weight:600;color:var(--ink)}
+.screen--dark .cta{border-top-color:rgba(250,249,243,.22)}
+.screen--dark .cta p{color:rgba(250,249,243,.72)}
+.screen--dark .cta p b{color:var(--bg)}
+.screen--dark .btn{background:var(--bg);color:var(--ink);border-color:var(--bg)}
+.screen--dark .btn--ghost{background:transparent;color:var(--bg);border-color:rgba(250,249,243,.45)}
+.doc .btn{margin-top:20px}
+
+.rise{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.3,1)}
+.rise.in{opacity:1;transform:none}
+
+/* ══════ ПЛАНШЕТ / ДЕСКТОП ══════ */
+@media(min-width:760px){
+  :root{--pad:48px;--head:64px}
+  body{font-size:17px;padding-bottom:0}
+  .mobar{display:none}
+  .wrap{max-width:1120px;margin:0 auto}
+  .brand img{width:38px;height:38px}
+  .brand__t{font-size:13px}
+  .brand__t br{display:none}
+  .top__tel{display:block}
+  .btn{width:auto;min-width:250px}
+  .screen{padding:calc(var(--head) + 64px) 0 78px}
+  .head h2{font-size:clamp(32px,4.2vw,46px)}
+  .head .lead{font-size:17px;margin-top:16px}
+  .block{margin-top:40px}
+  .hero h1{font-size:clamp(40px,5.4vw,60px);max-width:17ch}
+  .hero__lead{font-size:18px;max-width:52ch}
+  .hero__cta{display:flex;gap:12px}
+  .usp{grid-template-columns:repeat(4,1fr)}
+  .stats{grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)}
+  .stat{border-bottom:0;padding:22px 20px 22px 0}
+  .stat + .stat{padding-left:20px;border-left:1px solid var(--line)}
+  .stat__v{font-size:clamp(50px,5.2vw,64px)}
+  .stat__c{font-size:14px}
+  .two{grid-template-columns:1fr 1fr;gap:56px}
+  .obj{grid-template-columns:repeat(3,1fr);gap:12px}
+  .doc{grid-template-columns:280px 1fr;gap:44px}
+  .cards{grid-template-columns:repeat(3,1fr);gap:14px}
+  .card{padding:28px 24px}
+  .incl ul{grid-template-columns:1fr 1fr;gap:9px 32px}
+  .action{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .cta{grid-template-columns:1fr auto;gap:36px;align-items:center}
+  .cta p{max-width:52ch}
+  .form{margin-top:0;padding:28px 26px}
+  .faq{max-width:100%}
+  .foot{display:flex;justify-content:space-between}
+  .tel-big{font-size:34px}
+}
+@media(min-width:1100px){:root{--pad:64px}}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition-duration:.01ms!important}
+  .rise{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header class="top" id="top">
+  <div class="wrap top__in">
+    <div class="brand">
+      <img src="data:image/jpeg;base64,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" alt="Дом антивозрастной медицины" width="34" height="34">
+      <span class="brand__t">Дом антивозрастной<br>медицины<i>Эстетическая гинекология</i></span>
+    </div>
+    <a class="top__tel" href="tel:+78124073007">+7 (812) 407-30-07</a>
+  </div>
+</header>
+
+<!-- ═════ 1 · ВНИМАНИЕ ═════ -->
+<section class="screen hero">
+  <span class="num-tag">01 / 05</span>
+  <div class="wrap">
+    <div class="eyebrow">Интимная контурная пластика · Санкт-Петербург</div>
+    <h1>Стало некомфортно, но говорить об этом <b>неловко?</b></h1>
+    <p class="hero__lead">Восполняем объём тканей гелем гиалуроновой кислоты. Уходит сухость, натирание и дискомфорт в белье — за один приём, без разрезов и наркоза.</p>
+    <div class="hero__cta">
+      <a class="btn" href="#zapis">Записаться на консультацию</a>
+      <a class="btn btn--ghost" href="#ceny">Посмотреть цены</a>
+    </div>
+    <p class="hero__from">От <b>22 500 ₽</b> — препарат, обезболивание и работа врача включены</p>
+
+    <div class="usp">
+      <div><b>Ведёт гинеколог</b><span>А не косметолог: врач видит зону целиком</span></div>
+      <div><b>Цена фиксированная</b><span>Всё включено, доплат в чеке нет</span></div>
+      <div><b>Полностью обратимо</b><span>Гель растворяют, если не понравится</span></div>
+      <div><b>Без больничного</b><span>На работу — уже на следующий день</span></div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><span class="stat__v"><span class="n" data-to="40">0</span><i>мин</i></span><span class="stat__c">длится процедура</span></div>
+      <div class="stat"><span class="stat__v"><span class="n" data-to="2">0</span><i>дня</i></span><span class="stat__c">до обычной жизни</span></div>
+      <div class="stat"><span class="stat__v"><span class="n" data-to="12">0</span><i>мес</i></span><span class="stat__c">держится результат</span></div>
+      <div class="stat"><span class="stat__v"><span class="n" data-to="100">0</span><i>%</i></span><span class="stat__c">можно отменить</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ 2 · ИНТЕРЕС ═════ -->
+<section class="screen screen--alt">
+  <span class="num-tag">02 / 05</span>
+  <div class="wrap">
+    <div class="head rise">
+      <div class="eyebrow">С чем приходят</div>
+      <h2>Узнаёте себя хотя бы в одном пункте?</h2>
+      <p class="lead">Чаще всего это не про красоту, а про то, что стало некомфортно жить. И об этом почти не принято говорить вслух.</p>
+    </div>
+
+    <div class="block two rise">
+      <div>
+        <div class="sub">Что беспокоит</div>
+        <div class="list">
+          <div class="li"><span class="li__n">01</span><div><h3>Возраст</h3><p>Меняется гормональный фон, ткани истончаются, появляется сухость и стянутость.</p></div></div>
+          <div class="li"><span class="li__n">02</span><div><h3>После родов</h3><p>Ткани растянулись и изменились, особенно зона у основания.</p></div></div>
+          <div class="li"><span class="li__n">03</span><div><h3>Натирает</h3><p>Дискомфорт при ходьбе, в спортзале, в узком белье, неприятные ощущения при близости.</p></div></div>
+          <div class="li"><span class="li__n">04</span><div><h3>Сильно похудели</h3><p>Вместе с весом уходит подкожный жир — ткани «сдуваются».</p></div></div>
+          <div class="li"><span class="li__n">05</span><div><h3>Асимметрия</h3><p>Разница между сторонами, врождённая или появившаяся со временем.</p></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="sub">Что изменится</div>
+        <div class="list">
+          <div class="out"><span class="out__m"></span><div><h3>Ткани снова плотные</h3><p>Уходит ощущение, что их стало не хватать.</p></div></div>
+          <div class="out"><span class="out__m"></span><div><h3>Не натирает</h3><p>Ни в спортзале, ни в узком белье, ни на длинной прогулке.</p></div></div>
+          <div class="out"><span class="out__m"></span><div><h3>Меньше сухости</h3><p>Гиалуроновая кислота удерживает влагу в тканях.</p></div></div>
+          <div class="out"><span class="out__m"></span><div><h3>Комфортнее в близости</h3><p>Без боли и мыслей «а будет ли неприятно».</p></div></div>
+          <div class="out"><span class="out__m"></span><div><h3>Видно сразу</h3><p>Результат заметен в тот же день, окончательный — через две недели.</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta rise">
+      <p><b>Не уверены, ваш ли это случай?</b> Врач посмотрит и честно скажет, нужна коррекция или можно обойтись без неё. Приём — 3 500 ₽, ни к чему не обязывает.</p>
+      <a class="btn" href="#zapis">Записаться на консультацию</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ 3 · ЖЕЛАНИЕ · как проходит ═════ -->
+<section class="screen screen--dark">
+  <span class="num-tag">03 / 05</span>
+  <div class="wrap">
+    <div class="head rise">
+      <div class="eyebrow">Как это проходит</div>
+      <h2>Один приём — и две недели спокойных ограничений</h2>
+      <p class="lead">Врач вводит мягкий гель гиалуроновой кислоты тонкой иглой. Гель работает как губка: притягивает воду и удерживает её в тканях.</p>
+    </div>
+
+    <div class="block two rise" id="steps">
+      <div>
+        <div class="sub">Приём, около 90 минут</div>
+        <div class="steps">
+          <div class="steps__fill"></div>
+          <div class="stp"><em>15–20 минут</em><h3>Разговор и осмотр</h3>
+            <p>Что беспокоит, что можно сделать, есть ли противопоказания. Объём и цену согласуют до начала — сюрпризов в чеке не будет.</p></div>
+          <div class="stp"><em>15–20 минут</em><h3>Обезболивание</h3>
+            <p>Крем-анестетик, при необходимости укол. Ждём, пока подействует.</p></div>
+          <div class="stp"><em>30–40 минут</em><h3>Процедура</h3>
+            <p>Очень тонкая игла или мягкая канюля, которая раздвигает ткани, а не режет. Ощущается давление, не боль.</p></div>
+          <div class="stp"><em>10 минут</em><h3>Что дальше</h3>
+            <p>Памятка, прямой контакт врача и запись на контрольный осмотр через две недели.</p></div>
+        </div>
+      </div>
+      <div>
+        <div class="sub">Восстановление</div>
+        <div class="rows" id="rows">
+          <div class="rrow"><div class="rrow__t"><span>Отёк</span><i>до 5 дней</i></div>
+            <div class="rtrack"><div class="rfill" style="--w:36%"></div></div></div>
+          <div class="rrow"><div class="rrow__t"><span>Синячки, если появятся</span><i>до 7 дней</i></div>
+            <div class="rtrack"><div class="rfill" style="--w:50%"></div></div></div>
+          <div class="rrow"><div class="rrow__t"><span>Без спорта, сауны, бассейна</span><i>14 дней</i></div>
+            <div class="rtrack"><div class="rfill" style="--w:100%"></div></div></div>
+          <div class="rrow"><div class="rrow__t"><span>Без близости</span><i>14 дней</i></div>
+            <div class="rtrack"><div class="rfill" style="--w:100%"></div></div></div>
+        </div>
+        <ul class="facts" style="margin-top:24px">
+          <li><b>01</b><span>Больничный не нужен — на работу можно на следующий день</span></li>
+          <li><b>02</b><span>Первые дни отёк: кажется, что сделали больше, чем нужно</span></li>
+          <li><b>03</b><span>Через год приходят на поддержку, препарата обычно нужно меньше</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cta rise">
+      <p><b>Всё занимает один визит.</b> Приём ведут на Моховой и на Савушкина, запись по времени — сидеть в очереди не придётся.</p>
+      <a class="btn" href="#zapis">Выбрать удобное время</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ 4 · ЖЕЛАНИЕ · доверие ═════ -->
+<section class="screen">
+  <span class="num-tag">04 / 05</span>
+  <div class="wrap">
+    <div class="head rise">
+      <div class="eyebrow">Врач и ваши сомнения</div>
+      <h2>Кто ведёт приём</h2>
+      <p class="lead">Процедуру проводит врач акушер-гинеколог, а не косметолог. Приём индивидуальный, по записи, документация защищена врачебной тайной.</p>
+    </div>
+
+    <div class="block doc rise">
+      <div class="doc__ph">
+        <!-- ЗАМЕНИТЕ src на свой файл, напр. src="foto-vracha.jpg" -->
+        <img src="https://spbmeddom.ru/wp-content/uploads/2026/01/dzhinikati-1.png"
+             alt="Джиникати Диана Георгиевна" loading="lazy" onerror="this.remove()">
+        <span class="slot">
+          <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="15" rx="2"/><circle cx="12" cy="12" r="3.4"/><path d="M8 5l1.4-2h5.2L16 5"/></svg>
+          <b>МЕСТО ДЛЯ ФОТО ВРАЧА</b>
+          <span>Портрет или рабочий кадр, вертикальный, 4:5</span>
+        </span>
+      </div>
+      <div>
+        <h3 class="doc__n">Джиникати Диана Георгиевна</h3>
+        <p class="doc__r">Врач акушер-гинеколог, врач ультразвуковой диагностики</p>
+        <div class="doc__st">
+          <span><b>9</b>лет стажа</span>
+          <span><b>3 500 ₽</b>приём</span>
+        </div>
+        <p class="doc__q">«Моя задача — провести тщательную диагностику и вместе с вами составить понятный план действий. Чтобы женское здоровье было источником сил, а не поводом для тревоги».</p>
+        <p class="doc__e">Первый СПбГМУ им. акад. И. П. Павлова, «Лечебное дело» · интернатура и ординатура «Акушерство и гинекология» в СЗГМУ им. И. И. Мечникова · переподготовка «Ультразвуковая диагностика» · повышение квалификации в РМАНПО, 2024–2025.</p>
+        <a class="btn" href="#zapis">Записаться к этому врачу</a>
+      </div>
+    </div>
+
+    <div class="block obj rise">
+      <div class="objc"><h3><span>—</span>Это больно?</h3>
+        <p>Процедуру делают под местным обезболиванием. Ощущается давление и распирание, но не боль. Большинство пациенток говорит, что было терпимо и быстро.</p></div>
+      <div class="objc"><h3><span>—</span>А если не понравится?</h3>
+        <p>Гель растворяют специальным ферментом на обычном приёме, и ткани возвращаются к тому, что было. Ничего необратимого не происходит.</p></div>
+      <div class="objc"><h3><span>—</span>Как понять, сколько нужно?</h3>
+        <p>Это решают на приёме после осмотра. Врач предложит объём и объяснит почему — до начала процедуры и до оплаты. Часто достаточно меньшего, чем кажется.</p></div>
+    </div>
+
+    <div class="block faq rise">
+      <details><summary>Сколько держится результат?</summary><p>В среднем 8–12 месяцев. Зависит от препарата, объёма, обмена веществ и физической активности. Через год обычно приходят на поддержку, и препарата нужно меньше, чем в первый раз.</p></details>
+      <details><summary>Когда нельзя делать процедуру?</summary><p>При беременности и кормлении, воспалении или инфекции в интимной зоне, нарушениях свёртываемости крови, онкологии и тяжёлых хронических заболеваниях, обострении аутоиммунных заболеваний, непереносимости препарата и до 18 лет. Обо всём этом спросят на приёме.</p></details>
+      <details><summary>Что бывает после?</summary><p>Отёк и синячки в первые дни — это нормально. Небольшие неровности выравнивают на контрольном осмотре через две недели. Если что-то беспокоит, врач на связи в тот же день.</p></details>
+      <details><summary>Можно прийти просто поговорить?</summary><p>Да. Консультация ни к чему не обязывает — можно приехать, задать вопросы и уйти думать. Приём гинеколога — 3 500 ₽.</p></details>
+    </div>
+
+    <div class="cta rise">
+      <p><b>Не нашли свой вопрос?</b> Позвоните или напишите в Telegram — администратор ответит, даже если вы пока не готовы записываться.</p>
+      <a class="btn btn--ghost" href="tel:+78124073007">Позвонить в клинику</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ 5 · ДЕЙСТВИЕ ═════ -->
+<section class="screen screen--alt" id="ceny">
+  <span class="num-tag">05 / 05</span>
+  <div class="wrap">
+    <div class="head rise">
+      <div class="eyebrow">Цены и запись</div>
+      <h2>Всё включено, доплат нет</h2>
+      <p class="lead">Стоимость зависит только от объёма препарата. Какой нужен именно вам, врач определит на приёме.</p>
+    </div>
+
+    <div class="block cards rise" id="ceny-cards">
+      <div class="card">
+        <div class="card__ml">1<i>мл</i></div>
+        <h3>Контурная пластика</h3>
+        <p>Восполнение объёма больших и малых половых губ. Базовый вариант, если изменения умеренные.</p>
+        <div class="card__p">22 500 ₽<small>Препарат · обезболивание · врач</small></div>
+        <a class="btn btn--ghost" href="#zapis">Записаться</a>
+      </div>
+      <div class="card">
+        <div class="card__ml">2<i>мл</i></div>
+        <h3>Контурная пластика</h3>
+        <p>Больше материала: работа симметрично с двух сторон и восстановление зоны у основания.</p>
+        <div class="card__p">40 500 ₽<small>Препарат · обезболивание · врач</small></div>
+        <a class="btn btn--ghost" href="#zapis">Записаться</a>
+      </div>
+      <div class="card card--on">
+        <span class="card__tag">Чаще выбирают</span>
+        <div class="card__ml">4<i>мл</i></div>
+        <h3>Комплексная коррекция</h3>
+        <p>Полная коррекция объёма и дополнительно отдельная зона — точка G.</p>
+        <div class="card__p">70 500 ₽<small>Препарат · обезболивание · врач</small></div>
+        <a class="btn" href="#zapis">Записаться</a>
+      </div>
+    </div>
+
+    <div class="incl rise">
+      <b>Что уже входит в цену</b>
+      <ul>
+        <li>Препарат гиалуроновой кислоты нужного объёма</li>
+        <li>Местное обезболивание</li>
+        <li>Работа врача акушера-гинеколога</li>
+        <li>Памятка по восстановлению и связь с врачом</li>
+        <li>Контрольный осмотр через две недели</li>
+        <li>Отдельно: точка G, 1 мл — 22 500 ₽</li>
+      </ul>
+    </div>
+
+    <div class="block action rise" id="zapis">
+      <div>
+        <div class="cont" style="margin-top:0;border-top:0">
+          <div class="cont__row" style="border-top:1px solid var(--line)">
+            <b>Телефон</b>
+            <a class="tel-big" href="tel:+78124073007">+7 (812) 407-30-07</a>
+            <div class="msgs">
+              <a href="https://t.me/spb_meddom" target="_blank" rel="noopener">Telegram</a>
+              <a href="https://vk.com/meddom_spb" target="_blank" rel="noopener">ВКонтакте</a>
+              <a href="https://spbmeddom.ru/online-zapis/" target="_blank" rel="noopener">Онлайн-запись</a>
+            </div>
+          </div>
+          <div class="cont__row"><b>Моховая</b><p>ул. Моховая, 5 · метро Чернышевская</p></div>
+          <div class="cont__row"><b>Савушкина</b><p>ул. Савушкина, 121, корп. 1 · метро Беговая</p></div>
+          <div class="cont__row"><b>Часы работы</b><p>Пн–сб 09:00–21:00 · Вс 10:00–18:00</p></div>
+        </div>
+      </div>
+
+      <div class="form">
+        <h3>Начните с разговора</h3>
+        <p>Оставьте номер — администратор перезвонит, ответит на вопросы и подберёт время. Консультация ни к чему не обязывает.</p>
+        <div class="field"><input id="name" type="text" placeholder="Как к вам обращаться" autocomplete="given-name"></div>
+        <div class="field"><input id="tel" type="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel"></div>
+        <label class="consent"><input id="agree" type="checkbox"><span>Согласна на обработку персональных данных и с <a href="https://spbmeddom.ru/politika-v-otnoshenii-obrabotki-personalnyh-dannyh/" target="_blank" rel="noopener">политикой конфиденциальности</a></span></label>
+        <button class="btn" id="send" type="button">Отправить заявку</button>
+        <p class="fnote" id="fnote"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="disclaimer">18+ · Имеются противопоказания. Необходима консультация специалиста.</div>
+<footer class="wrap foot">
+  <span>© 2026 Дом антивозрастной медицины · Санкт-Петербург</span>
+  <span>
+    <a href="https://spbmeddom.ru/liczenzii/" target="_blank" rel="noopener">Лицензии</a> ·
+    <a href="https://spbmeddom.ru/politika-v-otnoshenii-obrabotki-personalnyh-dannyh/" target="_blank" rel="noopener">Политика конфиденциальности</a> ·
+    <a href="https://spbmeddom.ru/" target="_blank" rel="noopener">spbmeddom.ru</a>
+  </span>
+  <span>Не является публичной офертой</span>
+</footer>
+
+<nav class="mobar">
+  <a href="tel:+78124073007" class="btn btn--ghost">Позвонить</a>
+  <a href="#zapis" class="btn">Записаться</a>
+</nav>
+
+<script>
+const el=id=>document.getElementById(id);
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+let lastY=0;
+addEventListener('scroll',()=>{
+  const h=document.documentElement.scrollHeight-innerHeight;
+  el('progress').style.width=(scrollY/h*100)+'%';
+  const t=el('top');
+  if(scrollY>140 && scrollY>lastY) t.classList.add('top--hidden'); else t.classList.remove('top--hidden');
+  lastY=scrollY;
+},{passive:true});
+
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:.1});
+document.querySelectorAll('.rise,#steps,#rows').forEach(n=>io.observe(n));
+
+const cio=new IntersectionObserver((es,o)=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting) return;
+    const n=e.target,to=+n.dataset.to;
+    if(reduce){n.textContent=to;o.unobserve(n);return;}
+    let t0=null;
+    const st=ts=>{if(!t0)t0=ts;const p=Math.min((ts-t0)/1200,1);
+      n.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(st);};
+    requestAnimationFrame(st);o.unobserve(n);
+  });
+},{threshold:.4});
+document.querySelectorAll('.n').forEach(n=>cio.observe(n));
+
+el('send').addEventListener('click',()=>{
+  const note=el('fnote');
+  const name=el('name').value.trim();
+  const tel=el('tel').value.replace(/\D/g,'');
+  if(!name){note.textContent='Укажите имя.';el('name').focus();return;}
+  if(tel.length<10){note.textContent='Введите номер телефона полностью.';el('tel').focus();return;}
+  if(!el('agree').checked){note.textContent='Отметьте согласие на обработку данных.';return;}
+  note.textContent='Заявка отправлена. Администратор перезвонит в течение рабочего дня.';
+});
+</script>
+</body>
+</html>
